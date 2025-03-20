@@ -1,0 +1,140 @@
+*{
+  box-sizing: border-box;
+}
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+h1{
+  font-size: 20px;
+  font-family: "Titillium Web", sans-serif;
+}
+h2{
+  margin-bottom: 40px;
+  font-size: 20px;
+  line-height: 1.3;
+  font-family: "Titillium Web", sans-serif;
+}
+p{
+  font-size: 18px;
+  font-family: "Rubik", sans-serif;
+}
+span{
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.3;
+  font-family: "Rubik", sans-serif;
+}
+input{
+  width: 100%;
+  height: 36px;
+  margin-bottom: 10px;
+  padding: 0 10px;
+  border-radius: 4px;
+  border: none;
+  border-bottom: 2px solid  #5968e6;
+  outline: none;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+  position: relative;
+}
+input::placeholder {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Rubik", sans-serif;
+}
+
+.btn{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.3;
+  font-family: "Rubik", sans-serif;
+}
+.container{
+  width: 100%;  /* Usa 90% da tela para se adaptar */
+  max-width: 425px; /* Máximo de 600px para não ficar muito largo */
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 100dvh; /* Ocupa 100% da altura da tela */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  background: linear-gradient(to top, #f0f0f0, #e8e7e9);
+  position: relative;
+}
+
+.header{
+  width: 100%;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: linear-gradient(to top, #7580e6, #5968e6);
+  color: #FFFF;
+  position: relative;
+}
+.grid-header{
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+.logo{
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: start; /* Centraliza horizontalmente */
+  grid-template-columns: 1fr;
+  grid-column: 1;
+}
+
+main{
+  width: 100%;
+  padding: 0 20px;
+  background: linear-gradient(to top, #f0f0f0, #e8e7e9);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  flex: 1; /* Cresce automaticamente */
+  position: relative;
+}
+
+.btn-voltar{
+  width: 35px;
+  height: 35px;
+  left: 10px;
+  top: 14px;
+  background: linear-gradient(to top, #7580e6, #5968e6);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+.footer{
+  width: 100%;
+  padding: 3px 0;
+  background: linear-gradient(to bottom, #7580e6, #5968e6);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza verticalmente */
+  align-items: center; /* Centraliza horizontalmente */
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+
+.icon-voltar{
+  width: 24px;
+  height: 24px;
+  margin-top: 4px;
+}
